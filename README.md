@@ -155,4 +155,11 @@ Dota Science Challenge Hackathon
 
 #### R
 
-TBD
+Удобно использовать пакет [`httr`](https://cran.r-project.org/web/packages/httr/index.html).
+
+```R
+require(httr)
+current.leaderboard.json <- GET('http://alchemist.dotascience.com/api/leaderboard')
+current.leaderboard <- content(current.leaderboard.json, "parsed") 
+current.leaderboard$leaderboard
+```
