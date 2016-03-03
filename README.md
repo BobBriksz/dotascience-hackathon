@@ -16,9 +16,57 @@ Dota Science Challenge Hackathon
 
 ### API Для отправки предсказаний
 
-TBD
+Взаимодействие с системой сбора предсказаний происходит через HTTP API, почти все функции API требуют ключ. Ключ выдается индивидуально каждому участнику (или команде). Ключ необходимо указать в запросе в виде HTTP-заголовка `Key: <your-personal-key>`, либо в качестве параметра URL: `http://...?key=<your-personal-key>`.
+
+#### Список матчей
+
+Запрос: `GET http://alchemist.dotascience.com/api/matches`
+
+Пример ответа:
+```python
+{
+  "matches": [
+    {
+      "id": 13,
+      "status": 2,  # Состояние матча
+                    # 0 - Аннонсирован
+                    # 1 - Идет в данный момент
+                    # 2 - Завершен (известен победитель)
+      
+      "cell": 4,           # Положение матча в турнирной таблице
+      "order_in_cell": 1,  # Номер игры, в случае если команды 
+                           # играют несколько матчей (best-of-3)
+      
+      "participants": [   # Команды-участники
+        {
+          "team_id": 4, 
+          "team_name": "EHOME"
+        }, 
+        {
+          "team_id": 2244697, 
+          "team_name": "Team Archon"
+        }
+      ],
+      
+      "steam_match_id": 2191757537,   # match_id в Steam API 
+                                      # (известен после начала матча)
+    }, 
+    ...
+  ]
+}
+```
 
 ### Примеры использования API
 
-- Python: TBD
-- R: TBD
+#### Python
+
+```python
+import requests
+
+resp = requests.get('http://alchemist.dotascience.com/api/matches', headers={'Key': })
+
+```
+
+#### R
+
+TBD
