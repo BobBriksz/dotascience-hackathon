@@ -135,6 +135,8 @@ Dota Science Challenge Hackathon
 
 #### Python
 
+Удобно использовать библиотеку [`requests`](http://docs.python-requests.org/en/master/).
+
 ```python
 >>> import requests
 >>> api_key = 'BC5141CAA...518F53'
