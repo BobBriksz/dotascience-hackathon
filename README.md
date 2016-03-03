@@ -56,6 +56,20 @@ Dota Science Challenge Hackathon
 }
 ```
 
+#### Отправка предсказания
+
+Запрос: `POST http://alchemist.dotascience.com/api/match/<id>/prediction`
+
+Пример содержимого запроса:
+```python
+{
+  'team_id': 2244697,  # id команды
+  'probability': 0.6,  # вероятность победы указанной команды в матче
+}
+```
+
+Пример ответа:
+
 ### Примеры использования API
 
 #### Python
