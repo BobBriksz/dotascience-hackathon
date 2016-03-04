@@ -203,3 +203,7 @@ current.leaderboard.json <- GET('http://alchemist.dotascience.com/api/leaderboar
 current.leaderboard <- content(current.leaderboard.json, "parsed") 
 current.leaderboard$leaderboard
 ```
+
+## Пример предсказательных моделей
+
+- [Прогноз результата матча при помощи TrueSkill](examples/SimpleTrueSkillModel.ipynb)
