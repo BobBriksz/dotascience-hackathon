@@ -21,9 +21,10 @@ import bz2
 import json
 
 with bz2.BZ2File(’shanghai_live_league_games.jsonlines.bz2’) as f: 
-    for row in f:
-        match_timestamp = json.loads(row)
-        # my data preparing
+    for line in f:
+        record = json.loads(line)
+        match_id = record['match_id']
+        # process record
 ```
 
 #### Описание полей
