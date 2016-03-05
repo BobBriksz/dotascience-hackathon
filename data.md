@@ -131,6 +131,7 @@ with bz2.BZ2File(’shanghai_live_league_games.jsonlines.bz2’) as f:
 - <a href="https://yadi.sk/d/Q0DT-5u2pwEoF">OG</a>
 - <a href="https://yadi.sk/d/mpk-CR6XpwEqC">Ehome</a>
 - <a href="https://yadi.sk/d/iL2gi9NSpwF3Q">EG</a>
+- <a href="https://yadi.sk/d/aMRvlIEupwHCp">Liquid</a>
 
 ========================================
 
