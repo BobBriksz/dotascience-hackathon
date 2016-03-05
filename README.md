@@ -157,7 +157,7 @@ Score = log2(P_winner) + 1
       
       "radiant": {               # информация про команду radiant
         "picks": [
-            {"hero_id": 58}, 
+            {"hero_id": 58},     # пикнутые герои, см. расшифровку hero_id в каталоге dictionaries/
             {"hero_id": 20}, 
             {"hero_id": 106}
           ], 
@@ -186,7 +186,7 @@ Score = log2(P_winner) + 1
 }
 ```
 
-Формат поля `live_info` частично описан [здесь](https://wiki.teamfortress.com/wiki/WebAPI/GetLiveLeagueGames). 
+Формат поля `live_info` частично описан [здесь](https://wiki.teamfortress.com/wiki/WebAPI/GetLiveLeagueGames). Идентификаторы героев, предметов (`hero_id`, `item_id`, и т.д.) можно расшифровать при помощи таблиц из каталога [`dictionaries/`](./dictionaries).
 
 Есть возможность взять не только последнее известное состояние матча, а изменения `live_info` с течением времени. Для этого укажите URL-параметр `history=N`, где N — максимальное число изменений, которые необходимо вернуть. В результате запроса с указанным параметром `history` придет ответ с полем `live_history` — массив изменений поля `live_info` начиная с самого позднего, заканчивая более ранними. 
 
