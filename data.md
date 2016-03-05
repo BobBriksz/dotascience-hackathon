@@ -134,6 +134,17 @@ with bz2.BZ2File(’shanghai_live_league_games.jsonlines.bz2’) as f:
 - <a href="https://yadi.sk/d/mpk-CR6XpwEqC">Ehome</a>
 - <a href="https://yadi.sk/d/iL2gi9NSpwF3Q">EG</a>
 - <a href="https://yadi.sk/d/aMRvlIEupwHCp">Liquid</a>
+- <a href="https://yadi.sk/d/86EWNGH1pwRhu">Alliance</a>
+- <a href="https://yadi.sk/d/XMLq9U2RpwRiC">Archon</a>
+- <a href="https://yadi.sk/d/mRPFm6FbpwRik">CDEC</a>
+- <a href="https://yadi.sk/d/Cpk6J5d0pwRjC">coL</a>
+- <a href="https://yadi.sk/d/Mxt2VjfGpwRjZ">Fnatic</a>
+- <a href="https://yadi.sk/d/E3_H2goupwRmN">LGD</a>
+- <a href="https://yadi.sk/d/WVWu8jHRpwRmr">MVP</a>
+- <a href="https://yadi.sk/d/4F1mflv5pwRnA">Newbee</a>
+- <a href="https://yadi.sk/d/AZvKu0rKpwRnT">Spirit</a>
+- <a href="https://yadi.sk/d/ng-3MKEupwRnt">ViciGaming</a>
+- <a href="https://yadi.sk/d/lvC1EjtKpwRoj">VirtusPro</a>
 
 ========================================
 
