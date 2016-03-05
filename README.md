@@ -111,7 +111,7 @@ Score = log2(P_winner) + 1
 Запрос: `GET http://alchemist.dotascience.com/api/match/<id>/prediction`
 
 Пример ответа:
-```pytohn
+```python
 {
   "account_name": "peter",
   "match_id": 13, 
